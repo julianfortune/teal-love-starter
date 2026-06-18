@@ -1,5 +1,7 @@
 # Teal & Löve2d Start Project
 
+Starter repository for building projects in Löve2d with the addition of type checking.
+
 ## Getting Started
 
 ### Install System dependencies
@@ -30,8 +32,14 @@ Notes:
 - Teal is currentl only compatible with Lua `5.1.X` to `5.4.X`
 - The `asdf` plugin also installs `luarocks` automatically
 
+### Run the Project
 
-### VSCode Configuration
+```sh
+$ make
+```
+
+
+## VSCode Configuration
 
 Install the [Teal plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=pdesaulniers.vscode-teal).
 
@@ -42,8 +50,11 @@ Ensure your workspace settings point to the correct path for `tl`:
 }
 ```
 
-### Run the Project
+For formatting support, download the [Cerulian plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=efredriksson.cerulean-teal).
 
-```sh
-$ make
+Ensure your workspace settings point to the correct path for `ceru`:
+```json
+{
+    "cerulean.cliPath": "<absolute path to repo>/lua_modules/bin/ceru"
+}
 ```
