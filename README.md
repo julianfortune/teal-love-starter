@@ -1,36 +1,49 @@
-# Setup
+# Teal & Löve2d Start Project
 
-Install system dependencies
+## Getting Started
 
-MacOS:
+### Install System dependencies
+
+#### MacOS
 ```sh
 $ brew install love
 ```
 
-If you don't already have [asdf]():
+If you don't already have [`asdf`](https://asdf-vm.com):
 ```sh
 $ brew install asdf
 ```
 
-Linux/Windows: ...
+Make sure you have the Lua plugin:
+```sh
+$ asdf plugin add lua
+```
 
-Install a version of Lua compatible with Teal (currently `<5.5`) using `asdf`
-Note: this also install `luarocks` automatically
+### Install project dependencies
+
+Install Lua using `asdf`:
 ```sh
 $ asdf install
 ```
 
-Install VsCode plugin for Teal
+Notes:
+- Teal is currentl only compatible with Lua `5.1.X` to `5.4.X`
+- The `asdf` plugin also installs `luarocks` automatically
 
-Update settings to point to the correct path for `tl`:
+
+### VSCode Configuration
+
+Install the [Teal plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=pdesaulniers.vscode-teal).
+
+Ensure your workspace settings point to the correct path for `tl`:
 ```json
 {
     "teal.compilerPath": "./lua_modules/bin/tl"
 }
 ```
 
-# Running
+### Run the Project
 
 ```sh
-$ ./lua_modules/bin/cyan build && love ./build/
+$ make
 ```
