@@ -20,11 +20,6 @@ Note: this also install `luarocks` automatically
 $ asdf install
 ```
 
-Install `cyan` via `luarocks`
-```sh
-$ luarocks install --only-deps *.rockspec --tree lua_modules
-```
-
 Install VsCode plugin for Teal
 
 Update settings to point to the correct path for `tl`:
@@ -33,11 +28,6 @@ Update settings to point to the correct path for `tl`:
     "teal.compilerPath": "./lua_modules/bin/tl"
 }
 ```
-
-Download type declarations (and place in repository root):
-
-- [love.d.tl](https://github.com/MikuAuahDark/love2d-tl/blob/d7567cf407a705740884b0c9826e2be0cd9fa679/love.d.tl)
-
 
 # Running
 

@@ -1,4 +1,4 @@
-package = "Hello"
+package = "Example"
 version = "dev-1"
 
 source = {
@@ -7,6 +7,7 @@ source = {
 
 dependencies = {
    "cyan == 0.4.1",
+   "cerulean == 1.7.3",
 }
 
 build = {
